@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Dados dos Sensores ESP32</title>
+<style>
+  html += "body { font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 20px; color: #333; }";
+  html += ".container { max-width: 600px; margin: 20px auto; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 30px; }";
+  html += "h1 { text-align: center; color: #007bff; margin-bottom: 30px; }";
+  html += ".sensor-data { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; }";
+  html += ".card { flex: 1 1 200px; background-color: #e9ecef; border-radius: 6px; padding: 20px; text-align: center; min-width: 180px; }";
+  html += ".card h2 { color: #555; margin-top: 0; margin-bottom: 10px; font-size: 1.2em; }";
+  html += ".card p { font-size: 1.8em; font-weight: bold; color: #007bff; margin: 0; }";
+  html += ".last-updated { text-align: center; margin-top: 30px; font-size: 0.9em; color: #666; }";
+  html += ".refresh-button { display: block; width: 150px; margin: 20px auto; padding: 10px 15px; background-color: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; text-align: center; text-decoration: none; }";
+  html += ".refresh-button:hover { background-color: #218838; }";
+  html += "@media (max-width: 480px) { .sensor-data { flex-direction: column; } .card { flex-basis: auto; } }";
+  html += "</style>";
+  html += "<script>";
+  html += "function refreshPage() { location.reload(); }"; // Função simples para recarregar a página
+  html += "</script>";
+  html += "</head>";
+  html += "<body>";
+  html += "<div class='container'>";
+  html += "<h1>Dashboard de Sensores ESP32</h1>";
+  html += "<div class='sensor-data'>";
+  html += "<div class='card'><h2>LDR (Luz)</h2><p>" + String(valor_ldr) + "</p></div>";
+  html += "<div class='card'><h2>Temperatura</h2><p>" + String(temperatura_celsius, 1) + "&deg;C</p></div>";
+  html += "<div class='card'><h2>Humidade</h2><p>" + String(humidade_percentagem, 1) + "%</p></div>";
+  html += "<div class='card'><h2>Som (Analógico)</h2><p>" + String(valor_som) + "</p></div>";
+  html += "</div>";
+  html += "<p class='last-updated'>Última atualização: " + String(millis() / 1000) + " segundos atrás</p>";
+  html += "<button class='refresh-button' onclick='refreshPage()'>Atualizar Dados</button>";
+  html += "</div>";
+  html += "</body>";
+  html += "</html>";
+  <html><
