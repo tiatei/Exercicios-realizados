@@ -3,3 +3,5 @@
 -6024-Circuitos lógicos, utilizando falstad e easyeda;
 
 -6025-Circuitos combinatórios;
+
+-Exercicios e Testes de código referentes a Interface
