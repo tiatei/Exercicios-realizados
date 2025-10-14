@@ -5,3 +5,11 @@
 -6025-Circuitos combinatórios;
 
 -Exercicios e Testes de código referentes a Interface
+
+-6026 Circuitos Sequênciais- assíncronos
+
+-6071- Semsores e transdutores 
+
+-6052 - Programação-iniciação
+
+-6181-Controlo e regulação de processos 
