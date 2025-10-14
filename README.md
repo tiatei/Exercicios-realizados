@@ -8,6 +8,8 @@
 
 -6026 Circuitos Sequênciais- assíncronos
 
+-6051-Programação-algorítmica
+
 -6071- Semsores e transdutores 
 
 -6052 - Programação-iniciação
