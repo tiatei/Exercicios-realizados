@@ -12,6 +12,8 @@
 
 -6071- Semsores e transdutores 
 
+-6072-Microcontroladores
+
 -6052 - Programação-iniciação
 
 -6181-Controlo e regulação de processos 
