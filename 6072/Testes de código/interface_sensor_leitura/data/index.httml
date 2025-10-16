@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt pt" > 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <style>
+    html {
+      font-family: Helvetica;
+      display: inline-block;
+      margin: 0px auto;
+      text-align: center;
+    }
+    body {
+      background-color: #2196f3; /* azul */
+      margin: 0;
+      padding: 0;
+     
+    }
+    .sensor-box {
+      background: #fff;
+      border: 2px solid #e54308;
+      border-radius: 8px;
+      display: inline-block;
+      padding: 20px 40px;
+      font-size: 28px;
+      margin-top: 40px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Leituras de Sensor</h1>
+  <div class="sensor-box" id="sensorLeitura">
+    Leitura do sensor: <span id="valorSensor">---</span>
+  </div>
+  <script>
+    // Gera valores falsos de leitura do sensor a cada 2 segundos
+    function gerarLeituraFalsa() {
+      const valor = (Math.random() * 100).toFixed(2); // valor entre 0 e 100
+      document.getElementById('valorSensor').textContent = valor;
+    }
+    setInterval(gerarLeituraFalsa, 2000); // atualiza a cada 2 segundos
+    gerarLeituraFalsa(); // primeira leitura imediata
+  </script>
+</body>
+</html>
